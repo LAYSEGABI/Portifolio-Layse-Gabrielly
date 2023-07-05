@@ -1,0 +1,70 @@
+/* Fonte texto */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Links arquivos css */
+@import url('styles/header.css');
+@import url('styles/banner.css');
+@import url('styles/projetos.css');
+@import url('styles/conhecimentos.css');
+@import url('styles/contato.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-destaque: #dd1c6c;
+    --cor-texto: rgb(235, 225, 225);
+    --preto-padrao: rgb(17, 4, 20);
+    --cinza-padrao: rgb(165, 165, 165);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--preto-padrao);
+}
+
+
+/* Scrollbar personalizada */
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--preto-padrao);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor-destaque);
+    border-radius: 5px;
+}
+
+/* Botão voltar ao topo*/
+
+.btn-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    visibility: hidden;
+}
+
+.btn-fixed.visible {
+    visibility: visible;
+}
+
+.pop{
+    padding: 0.5em;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: var( --cor-destaque);
+}
+
+
+/*----------------*/

@@ -1,0 +1,97 @@
+.banner {
+    display: flex;
+    align-items: center;
+    margin: 2em 4em;
+    height: 100vh;
+    justify-content: space-around;
+}
+
+.banner-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--cor-texto);
+    width: 40%;
+}
+
+.banner-redes {
+    display: flex;
+    gap: 30px;
+    margin-top: 3em;
+}
+
+.banner-descricao {
+    color: var(--cinza-padrao);
+    font-weight: 600;
+}
+
+
+.banner-redes a {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    width: 25%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--preto-padrao);
+    color: var(--cor-texto);
+    transition: 0.9s;
+    border: 1px solid var(--cor-destaque);
+}
+
+.banner-redes a:hover {
+    background-color: var(--cor-destaque);
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.35);
+}
+
+
+
+.banner img {
+    width: 40%;
+    animation: float 2.5s ease-in-out infinite;
+}
+
+/* Animação de flutuar da imagem no banner */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.banner-texto h1 {
+    border-right: 3px solid rgba(255, 255, 255, 0.75);
+    font-size: 3.2em;
+    animation: blinkCursor 1s steps(40) infinite normal,
+        typing 2.5s steps(40) 1s normal both;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/*---------animação da tag h1 - Layse Gabrielly -----------*/
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 8em;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
