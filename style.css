@@ -15,7 +15,7 @@
 }
 
 :root {
-    --cor-destaque: #dd1c6c;
+    --cor-destaque: #1c59dd;
     --cor-texto: rgb(235, 225, 225);
     --preto-padrao: rgb(17, 4, 20);
     --cinza-padrao: rgb(165, 165, 165);
@@ -45,26 +45,3 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--cor-destaque);
     border-radius: 5px;
 }
-
-/* Botão voltar ao topo*/
-
-.btn-fixed {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    visibility: hidden;
-}
-
-.btn-fixed.visible {
-    visibility: visible;
-}
-
-.pop{
-    padding: 0.5em;
-    border-radius: 5px;
-    color: rgb(255, 255, 255);
-    background-color: var( --cor-destaque);
-}
-
-
-/*----------------*/

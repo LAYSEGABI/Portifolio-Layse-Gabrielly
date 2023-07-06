@@ -1,17 +1,23 @@
 .banner {
     display: flex;
     align-items: center;
-    margin: 2em 4em;
-    height: 100vh;
+    padding: 2em 10%;
+    height: 90vh;
     justify-content: space-around;
+    justify-content: flex-start;
+    background: url('../img/2825704.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
 }
 
 .banner-texto {
     display: flex;
+
     flex-direction: column;
     gap: 10px;
     color: var(--cor-texto);
-    width: 40%;
+
 }
 
 .banner-redes {
@@ -29,13 +35,14 @@
 .banner-redes a {
     text-decoration: none;
     padding: 0.5em 1em;
-    width: 25%;
+    width: 30%;
     text-align: center;
     border-radius: 5px;
-    background-color: var(--preto-padrao);
+    background-color: rgba(0, 0, 0, 0.548);
     color: var(--cor-texto);
     transition: 0.9s;
     border: 1px solid var(--cor-destaque);
+    animation: float 3s infinite;
 }
 
 .banner-redes a:hover {
@@ -44,13 +51,7 @@
 }
 
 
-
-.banner img {
-    width: 40%;
-    animation: float 2.5s ease-in-out infinite;
-}
-
-/* Animação de flutuar da imagem no banner */
+/* Animação de flutuar */
 @keyframes float {
     0% {
         transform: translateY(0px);
