@@ -38,7 +38,7 @@
     width: 30%;
     text-align: center;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.548);
+    background-color: rgba(0, 0, 0, 0.486);
     color: var(--cor-texto);
     transition: 0.9s;
     border: 1px solid var(--cor-destaque);
@@ -95,4 +95,24 @@
     to {
         border-right-color: transparent;
     }
+}
+
+
+
+@media (max-width: 500px) {
+
+    .banner{
+        height: 100vh;
+    }
+    
+
+ 
+    .banner-texto h1 {
+    font-size: 2em;
+    }
+
+    .banner-redes a{
+        width: 50%;
+    }
+
 }

@@ -16,19 +16,38 @@
     <!-- Cabecalho -->
     <header>
         <a href=""><img class="logo" src="img/code-solid 1.svg" alt=""></a>
-        <nav>
-            <a class="nav-link" href="#">Ínicio</a>
+        <nav class="nav-container">
+            <a class="nav-link inicio" href="#">Ínicio</a>
             <a class="nav-link" href="#projetos">Projetos</a>
             <a class="nav-link" href="#sobre-mim">Sobre mim</a>
             <a class="nav-link" href="#conhecimentos">Conhecimentos</a>
             <a class="contate-me" href="#contato">Contate-me</a>
         </nav>
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#sobre-mim">Sobre mim</a></li>
+                    <li><a href="#conhecimentos">Conhecimentos</a></li>
+                    <li><a href="#contate-me">Contate-me</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-bg" id="menu-bg"></div>
     </header>
+
+
 
     <!-- Banner -->
     <section class="banner">
         <div class="banner-texto">
-            <p >Olá, eu sou</p>
+            <p>Olá, eu sou</p>
             <h1>Layse Gabrielly</h1>
             <p class="banner-descricao">Desenvolvedora Front-end e Web designer</p>
             <div class="banner-redes">
