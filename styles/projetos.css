@@ -68,10 +68,10 @@
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.35);
 }
 
+/*--------- Animações efeito neon----------------------------*/
 
 @keyframes neon {
     0% {
-
         box-shadow: 0 0 11px var(--cor-destaque);
     }
 
@@ -81,13 +81,13 @@
     }
 }
 
+/*--------- Media querys----------------------------*/
 @media (max-width: 1000px) {
 
     .cards {
         flex-direction: column;
     }
 }
-
 
 @media (max-width: 500px) {
 
@@ -99,3 +99,11 @@
         margin: 1em;
     }
 }
+
+
+
+
+
+
+
+

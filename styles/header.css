@@ -7,6 +7,11 @@ header {
     top: 0;
     width: 100%;
     padding: 1em 4em;
+    z-index: 90;
+}
+
+.changeStyle {
+    background-color: rgba(15, 17, 34, 0.719);
 }
 
 nav {

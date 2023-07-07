@@ -47,3 +47,26 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+/* Animaçoes de entrada e saida de conteudo */
+
+[data-anima] {
+    opacity: 0;
+    transition: .8s;
+}
+
+[data-anima="esquerda"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anima="direita"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anima="centro"] {
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-anima].animacao {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
