@@ -3,13 +3,14 @@
     flex-direction: column;
     text-align: center;
     margin: 4em;
-    overflow: hidden;
+
 }
 
 .titulo-section {
     color: var(--cor-texto);
     margin-bottom: 2em;
     font-size: 2em;
+    white-space: nowrap;
 }
 
 .titulo-section span {
@@ -85,12 +86,16 @@
 /*--------- Media querys----------------------------*/
 @media (max-width: 1000px) {
 
+
     .cards {
         flex-direction: column;
     }
 }
 
 @media (max-width: 500px) {
+    .projetos {
+        overflow: hidden;
+    }
 
     .titulo-section {
         margin-top: 2em;
@@ -100,11 +105,3 @@
         margin: 1em;
     }
 }
-
-
-
-
-
-
-
-

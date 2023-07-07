@@ -1,0 +1,124 @@
+.sobre-mim {
+    color: var(--cor-texto);
+    margin: 2em 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background-color: rgba(5, 11, 32, 0.219);
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 2em;
+    gap: 30px;
+    align-items: center;
+    animation: neon 2s alternate infinite ease-in-out;
+}
+
+.sobre-container img {
+    width: 40%;
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: .5s;
+}
+
+.sobre-container img:hover {
+    opacity: 1;
+}
+
+.sobre-texto {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.quem-sou {
+    color: var(--cor-destaque);
+    font-weight: 600;
+}
+
+.sobre-texto h4 {
+    font-size: 1.6em;
+}
+
+.sobre-descricao {
+    color: var(--cinza-padrao);
+    margin: 35px 0;
+}
+
+.sobre-redes {
+    display: flex;
+    gap: 30px;
+}
+
+.sobre-redes a {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: var(--cor-texto);
+    transition: 0.9s;
+    border: 1px solid var(--cor-destaque);
+}
+
+.sobre-redes a:hover {
+    background-color: var(--cor-destaque);
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 350px) {
+    .sobre-descricao span {
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+
+    .sobre-texto h4 {
+        font-size: 1.2em;
+    }
+
+    .sobre-container img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1250px) {
+
+    .sobre-texto {
+        gap: 5px;
+    }
+
+    .sobre-descricao {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .sobre-container {
+        flex-direction: column-reverse;
+        width: auto;
+    }
+
+    .sobre-container img {
+        width: 100%;
+    }
+
+
+    .sobre-texto {
+        gap: 5px;
+    }
+
+    .sobre-descricao {
+        margin: 10px 0;
+    }
+}

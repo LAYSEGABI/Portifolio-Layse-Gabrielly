@@ -7,7 +7,7 @@ function menuOnClick() {
 }
 
 
-// Header trocar o background color ao descer a pagina
+// Header troca o background-color ao descer a pagina
 const desiredElement = document.getElementById('header');
 const pixelsAmount = '50';
 
@@ -20,7 +20,7 @@ window.addEventListener('scroll', function () {
 });
 
 
-//Animacao de entrada e saida de conteudo ao rolar a pagina
+//Animacao de entrada e saida de conteudo ao rolar a página
 const elementos = document.querySelectorAll('[data-anima]');
 const animacaoClass = 'animacao';
 

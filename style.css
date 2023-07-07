@@ -5,6 +5,7 @@
 @import url('styles/header.css');
 @import url('styles/banner.css');
 @import url('styles/projetos.css');
+@import url('styles/sobre-mim.css');
 @import url('styles/conhecimentos.css');
 @import url('styles/contato.css');
 
@@ -18,7 +19,7 @@
     --cor-destaque: #1c59dd;
     --cor-texto: rgb(235, 225, 225);
     --preto-padrao: rgb(4, 4, 20);
-    --cinza-padrao: rgb(165, 165, 165);
+    --cinza-padrao: rgb(196, 196, 196);
 }
 
 html {
