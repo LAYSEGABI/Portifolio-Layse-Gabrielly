@@ -60,6 +60,7 @@ nav {
     background-color: var(--cor-destaque);
     color: var(--cor-texto);
     transition: 0.9s;
+    font-weight: bolder;
     border: 1px solid var(--preto-padrao);
 }
 

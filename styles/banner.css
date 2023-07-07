@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     padding: 2em 10%;
-    height: 90vh;
+    height: 100vh;
     justify-content: space-around;
     justify-content: flex-start;
     background: url('../img/2825704.webp');
@@ -13,7 +13,6 @@
 
 .banner-texto {
     display: flex;
-
     flex-direction: column;
     gap: 10px;
     color: var(--cor-texto);

@@ -17,7 +17,7 @@
 :root {
     --cor-destaque: #1c59dd;
     --cor-texto: rgb(235, 225, 225);
-    --preto-padrao: rgb(17, 4, 20);
+    --preto-padrao: rgb(4, 4, 20);
     --cinza-padrao: rgb(165, 165, 165);
 }
 
@@ -34,7 +34,7 @@ body {
 /* Scrollbar personalizada */
 
 body::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
 }
 
 body::-webkit-scrollbar-track {
