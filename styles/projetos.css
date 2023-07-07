@@ -1,16 +1,16 @@
-
-
 .projetos {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin:  4em;
+    margin: 4em;
 }
+
 .titulo-section {
     color: var(--cor-texto);
     margin-bottom: 2em;
     font-size: 2em;
 }
+
 .titulo-section span {
     color: var(--cor-destaque);
 }
@@ -33,6 +33,7 @@
     width: 100%;
     transition: 0.5s;
     overflow: hidden;
+    animation: neon 2s alternate infinite ease-in-out;
 }
 
 .card:hover {
@@ -68,7 +69,17 @@
 }
 
 
+@keyframes neon {
+    0% {
 
+        box-shadow: 0 0 11px var(--cor-destaque);
+    }
+
+    100% {
+        box-shadow: 0 0 0px var(--cor-destaque);
+
+    }
+}
 
 @media (max-width: 1000px) {
 
@@ -83,10 +94,8 @@
     .titulo-section {
         margin-top: 2em;
     }
+
     .projetos {
         margin: 1em;
     }
 }
-
-
-  
