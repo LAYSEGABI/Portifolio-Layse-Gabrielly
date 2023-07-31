@@ -42,6 +42,7 @@
     transition: 0.9s;
     border: 1px solid var(--cor-destaque);
     animation: float 3s infinite;
+    animation: neon 1s alternate infinite ease-in-out;
 }
 
 .banner-redes a:hover {
@@ -93,6 +94,20 @@
 
     to {
         border-right-color: transparent;
+    }
+}
+
+
+/*--------- Animações efeito neon----------------------------*/
+
+@keyframes neon {
+    0% {
+        box-shadow: 0 0 9px var(--cor-destaque);
+    }
+
+    100% {
+        box-shadow: 0 0 0px var(--cor-destaque);
+
     }
 }
 
