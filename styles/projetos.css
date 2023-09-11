@@ -70,6 +70,10 @@
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.35);
 }
 
+.card-2 {
+    margin-top: 3em;
+}
+
 /*--------- Animações efeito neon----------------------------*/
 
 @keyframes neon {
