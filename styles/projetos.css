@@ -95,13 +95,11 @@
 @media (max-width: 500px) {
     .projetos {
         overflow: hidden;
+        margin: 1em;
     }
 
     .titulo-section {
         margin-top: 2em;
     }
 
-    .projetos {
-        margin: 1em;
-    }
 }
