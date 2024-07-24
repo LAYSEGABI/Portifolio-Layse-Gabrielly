@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap');
+
 .banner {
     display: flex;
     align-items: center;
@@ -5,7 +7,9 @@
     height: 100vh;
     justify-content: space-around;
     justify-content: flex-start;
-    background: url('../img/2825704.webp');
+    background: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.932) , rgba(0, 0, 0, 0.205) 70%), 
+        url('../img/gif-back.gif');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -17,6 +21,7 @@
     flex-direction: column;
     gap: 10px;
     color: var(--cor-texto);
+    
 
 }
 
@@ -24,6 +29,7 @@
     display: flex;
     gap: 30px;
     margin-top: 3em;
+
 }
 
 .banner-descricao {
@@ -40,7 +46,7 @@
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.486);
     color: var(--cor-texto);
-    transition: 0.9s;
+    transition: 0.5s;
     border: 1px solid var(--cor-destaque);
     animation: float 3s infinite;
     animation: neon 1s alternate infinite ease-in-out;
@@ -49,6 +55,7 @@
 .banner-redes a:hover {
     background-color: var(--cor-destaque);
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.35);
+    transform: translateY(5px);
 }
 
 
@@ -74,7 +81,12 @@
         typing 2.5s steps(40) 1s normal both;
     overflow: hidden;
     white-space: nowrap;
+    font-family: "Kalnia Glaze", serif;
+    background-color: rgba(0, 0, 0, 0.075);
+   
 }
+
+
 
 /*---------animação da tag h1 - Layse Gabrielly -----------*/
 
@@ -84,7 +96,7 @@
     }
 
     to {
-        width: 8em;
+        width: 8.5em;
     }
 }
 
