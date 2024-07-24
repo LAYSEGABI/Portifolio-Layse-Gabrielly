@@ -162,7 +162,9 @@ nav {
     width: 0;
     height: 0;
     margin: 30px 0 20px 20px;
-    background: rgba(64, 19, 85, 0.925);
+    background: 
+        linear-gradient(to bottom, rgb(63, 3, 63) , rgba(99, 12, 84, 0.801) 70%), 
+        url('../img/gif-back.gif');
     border-radius: 50%;
     transition: 0.3s ease;
 }

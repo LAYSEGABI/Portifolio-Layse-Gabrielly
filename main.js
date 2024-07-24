@@ -1,8 +1,41 @@
 
 // Menu hamburguer
 function menuOnClick() {
-  document.getElementById("menu-bar").classList.toggle("change");
-  document.getElementById("nav").classList.toggle("change");
+  const menuButton = document.getElementById("menu-bar")
+  menuButton.classList.toggle("change");
+
+  const nav = document.getElementById("nav");
+  nav.classList.toggle("change");
+
+  if(nav.classList.contains("change")) {
+     menuButton.setAttribute("aria-expanded", true);
+  } else {
+    menuButton.setAttribute("aria-expanded", false);
+    
+  }
+ 
+  const links = document.querySelectorAll('.nav a, #menu-bar');
+
+  links.forEach((link, index) => {
+    link.addEventListener('keydown', (event) => {
+      if (event.key === 'Tab') {
+        if (event.shiftKey) {
+          // Shift+Tab
+          if (index === 0) {
+            event.preventDefault();
+            links[links.length - 1].focus();
+          }
+        } else {
+          // Tab
+          if (index === links.length - 1) {
+            event.preventDefault();
+            links[0].focus();
+          }
+        }
+      }
+    });
+  });
+
   document.getElementById("menu-bg").classList.toggle("change-bg");
 }
 
