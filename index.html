@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,34 +7,43 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
     <title>Portifolio | Layse Gabrielly</title>
+
 </head>
 
 <body>
 
+    <!-- Gradientes do fundo-->
+    <div class="gradient obj1"></div>
+    <div class="gradient obj2"></div>
+    <div class="gradient obj3"></div>
+    <div class="gradient obj4"></div>
 
 
     <!-- Cabecalho -->
     <header id="header">
-        <a href=""><img class="logo" src="img/logo.svg" alt=""></a>
+        <a href="" aria-label="Ir para o inicio"><img aria-hidden="true" class="logo" src="img/logo.svg" alt=""></a>
         <nav class="nav-container">
-            <a class="nav-link inicio" href="#">Ínicio</a>
+            <a class="nav-link inicio" href="#">Início</a>
             <a class="nav-link" href="#projetos">Projetos</a>
             <a class="nav-link" href="#sobre-mim">Sobre mim</a>
             <a class="nav-link" href="#conhecimentos">Conhecimentos</a>
-            <a class="contate-me" href="https://www.linkedin.com/in/layse-gabrielly-8b5406235/" target="_blank">Contate-me</a>
+            <a class="contate-me" href="https://www.linkedin.com/in/layse-gabrielly-8b5406235/"
+                target="_blank">Contate-me</a>
         </nav>
         <div id="menu">
-            <div id="menu-bar" onclick="menuOnClick()">
-                <div id="bar1" class="bar"></div>
-                <div id="bar2" class="bar"></div>
-                <div id="bar3" class="bar"></div>
-            </div>
+            <button aria-label="Abrir menu" aria-controls="nav" aria-expanded="false" id="menu-bar"
+                onclick="menuOnClick()">
+                <div aria-hidden="true" id="bar1" class="bar"></div>
+                <div aria-hidden="true" id="bar2" class="bar"></div>
+                <div aria-hidden="true" id="bar3" class="bar"></div>
+            </button>
             <nav class="nav" id="nav">
                 <ul>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#sobre-mim">Sobre mim</a></li>
                     <li><a href="#conhecimentos">Conhecimentos</a></li>
-                    <li><a href="https://www.linkedin.com/in/layse-gabrielly-8b5406235/" target="_blank">Contate-me</a></li>
+                    <li><a href="https://www.linkedin.com/in/layse-gabrielly-8b5406235/" target="_blank">Contate-me</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -49,24 +58,31 @@
             <h1>Layse Gabrielly</h1>
             <p class="banner-descricao">Desenvolvedora Front-end e Web designer</p>
             <div class="banner-redes">
-                <a href="https://github.com/LAYSEGABI" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/layse-gabrielly-8b5406235/" target="_blank">LinkedIn</a>
+                <a aria-label="Olá, eu sou Layse Gabrielly, Desenvolvedora Front-end e Web designer, Clique aqui para acessar meu Github"
+                    href="https://github.com/LAYSEGABI" target="_blank">GitHub</a>
+                <a aria-label="Clique aqui para acessar meu Linkedin"
+                    href="https://www.linkedin.com/in/layse-gabrielly-8b5406235/" target="_blank">LinkedIn</a>
             </div>
         </div>
     </section>
 
+
     <!-- Projetos -->
     <span id="projetos"></span>
-    <section class="projetos" >
-        <h2 class="titulo-section">Projetos<span>.</span></h2>
+    <section aria-labelledby="projects" class="projetos">
+        <h2 id="projects" class="titulo-section">Projetos<span>.</span></h2>
         <div class="cards">
-            <div class="card" data-anima="esquerda">
-                <h3>Site Prototipando a Quebrada</h3>
-                <p>Html | CSS</p>
-                <p class="card-descricao">Prototipando a Quebrada (PAQ) é uma ONG da qual eu faço parte, me inspirei no proprio site da organização pra fazer uma nova versão dele.</p>
+            <div role="group" aria-labelledby="card-title-0" aria-describedby="card-desc-0 card-desc-1" class="card"
+                data-anima="esquerda">
+                <h3 id="card-title-0">Site Prototipando a Quebrada</h3>
+                <p id="card-desc-0">Html | CSS</p>
+                <p id="card-desc-1" class="card-descricao">Prototipando a Quebrada (PAQ) é uma ONG da qual eu faço
+                    parte, me inspirei no proprio site da organização pra fazer uma nova versão dele.</p>
                 <div class="card-buttons">
-                    <a href="https://github.com/LAYSEGABI/Site-PAQ" target="_blank">Repositório</a>
-                    <a href="https://site-paq.vercel.app/" target="_blank">Vizualizar Site</a>
+                    <a aria-labelledby="card-title-0 card-desc-0 card-desc-1" href="https://site-paq.vercel.app/"
+                        target="_blank">Vizualizar Site</a>
+                    <a aria-label="visitar o repositório do site prototipando a quebrada"
+                        href="https://github.com/LAYSEGABI/Site-PAQ" target="_blank">Repositório</a>
                 </div>
             </div>
             <div class="card" data-anima="centro">
@@ -82,7 +98,8 @@
             <div class="card" data-anima="direita">
                 <h3>Fretex</h3>
                 <p>Html | CSS | Javascript</p>
-                <p class="card-descricao">Fretex foi uma Startup eu que eu fiz parte, durante ess meio tempo desenvolvi um site que mostrasse o proposito e valores da marca.</p>
+                <p class="card-descricao">Fretex foi uma Startup eu que eu fiz parte, durante ess meio tempo desenvolvi
+                    um site que mostrasse o proposito e valores da marca.</p>
                 <div class="card-buttons">
                     <a href="https://github.com/LAYSEGABI/Fretex" target="">Repositório</a>
                     <a href="https://fretex-tau.vercel.app/" target="_blank">Vizualizar Site</a>
@@ -93,7 +110,8 @@
             <div class="card" data-anima="esquerda">
                 <h3>Cafeteria Grão Dourado</h3>
                 <p>Html | CSS | Javascript</p>
-                <p class="card-descricao">Site dedicado a uma cafeteria de cunho familiar e simplista, desenvolvi o design no figma com inspirações do Behance e Pinterest.</p>
+                <p class="card-descricao">Site dedicado a uma cafeteria de cunho familiar e simplista, desenvolvi o
+                    design no figma com inspirações do Behance e Pinterest.</p>
                 <div class="card-buttons">
                     <a href="https://github.com/LAYSEGABI/Padaria-Grao-Dourado" target="_blank">Repositório</a>
                     <a href="https://padaria-grao-dourado.vercel.app/" target="_blank">Vizualizar Site</a>
@@ -102,7 +120,8 @@
             <div class="card" data-anima="centro">
                 <h3>Landing page Rifa Notebook</h3>
                 <p>Html | CSS | Javascript</p>
-                <p class="card-descricao">Landing page dedicada a um sorteio de um Notebook que foi promovido pela ong que eu faço parte, projeto simples e direto.</p>
+                <p class="card-descricao">Landing page dedicada a um sorteio de um Notebook que foi promovido pela ong
+                    que eu faço parte, projeto simples e direto.</p>
                 <div class="card-buttons">
                     <a href="https://github.com/LAYSEGABI/Landing-Page-Rifa-PAQ" target="_blank">Repositório</a>
                     <a href="https://landing-page-rifa-paq.vercel.app/" target="_blank">Vizualizar Site</a>
@@ -111,7 +130,8 @@
             <div class="card" data-anima="direita">
                 <h3>Modelo de Portifólio</h3>
                 <p>Html | CSS | Javascript</p>
-                <p class="card-descricao">Projetado para destacar as habilidades, experiências e projetos mais relevantes, proporcionando uma visão geral rápida e impactante do profissional.</p>
+                <p class="card-descricao">Projetado para destacar as habilidades, experiências e projetos mais
+                    relevantes, proporcionando uma visão geral rápida e impactante do profissional.</p>
                 <div class="card-buttons">
                     <a href="https://github.com/LAYSEGABI/Portifolio-Haba-Gosch" target="">Repositório</a>
                     <a href="https://habacuque-gosch.vercel.app/" target="_blank">Vizualizar Site</a>
@@ -122,22 +142,30 @@
     </section>
 
     <!-- Sobre-mim -->
-    <section class="sobre-mim" id="sobre-mim">
-        <h2 class="titulo-section">Sobre mim<span>.</span></h2>
+    <section tabindex="0" role="region" aria-labelledby="about-title-0" aria-describedby="about-desc-0 "
+        class="sobre-mim" id="sobre-mim">
+        <h2 id="about-title-0" class="titulo-section">Sobre mim<span>.</span></h2>
         <div class="sobre-container" data-anima="centro">
-            <img src="img/minha-foto.png" alt="">
+            <img src="img/minha-foto.png" alt="Uma mulher parda de cabelo longo e escuro, olhos escuros">
             <div class="sobre-texto">
-                <p class="quem-sou">Quem sou</p>
-                <h4>Layse Gabrielly</h4>
-                <p>Desenvolvedora Front-end | Web Designer</p>
-                <p class="sobre-descricao">
-                    Natural de Belém-PA, atualmente morando em SC, descobri minha carreira dos sonhos após entrar em um projeto social e me encontrar em programação, mas especificamente Front-end. Apaixonada por design e programação, vi no Front-end a oportunidade unir o que eu já amava.
-                    No momento, estou em busca de experiências, que me ajudem a crescer e entender cada vez mais esse mundo Tech. 
-                </p>
+                <div id="about-desc-0">
+                    <p class="quem-sou">Quem sou</p>
+                    <h3>Layse Gabrielly</h3>
+                    <p>Desenvolvedora Front-end | Web Designer</p>
+                    <p class="sobre-descricao">
+                        Natural de Belém-PA, atualmente morando em SC, descobri minha carreira dos sonhos após entrar em
+                        um projeto social e me encontrar em programação, mais especificamente Front-end. Apaixonada por
+                        design e programação, vi no Front-end a oportunidade unir o que eu já amava.
+                        No momento, estou em busca de experiências, que me ajudem a crescer e entender cada vez mais
+                        esse mundo Tech.
+                    </p>
+                </div>
                 <div class="sobre-redes">
-                    <a class="redes" href="https://github.com/LAYSEGABI" target="_blank">GitHub</a>
-                    <a  class="img-redes" href=""><img src="img/github.svg" alt=""></a>
-                    <a class="redes" href="https://www.linkedin.com/in/layse-gabrielly-8b5406235/" target="_blank">LinkedIn</a>
+                    <a aria-label="Visite meu GitHub" class="redes" href="https://github.com/LAYSEGABI"
+                        target="_blank">GitHub</a>
+                    <a class="img-redes" href=""><img src="img/github.svg" alt=""></a>
+                    <a aria-label="Visite meu LinkedIn" class="redes"
+                        href="https://www.linkedin.com/in/layse-gabrielly-8b5406235/" target="_blank">LinkedIn</a>
                     <a class="img-redes" href=""><img src="img/insta.svg" alt=""></a>
                     <a class="redes" href="https://www.instagram.com/layse_gabi/" target="_blank">Instagram</a>
                     <a class="img-redes" href=""><img src="img/linkedin.svg" alt=""></a>

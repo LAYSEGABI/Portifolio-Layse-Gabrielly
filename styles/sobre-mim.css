@@ -11,7 +11,7 @@
     flex-direction: row;
     width: 80%;
     background-color: rgba(5, 11, 32, 0.219);
-    border: 1px solid blue;
+    border: 1px solid rgb(234, 0, 255);
     border-radius: 10px;
     padding: 2em;
     gap: 30px;
@@ -42,7 +42,7 @@
     font-weight: 600;
 }
 
-.sobre-texto h4 {
+.sobre-texto h3 {
     font-size: 1.6em;
 }
 

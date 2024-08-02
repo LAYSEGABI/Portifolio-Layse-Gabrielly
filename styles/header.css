@@ -8,6 +8,9 @@ header {
     width: 100%;
     padding: 1em 4em;
     z-index: 90;
+    background: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.664) , rgba(0, 0, 0, 0.479) 90%), 
+        url('../img/gif-back.gif');
 }
 
 .changeStyle {
@@ -50,6 +53,7 @@ nav {
 
 .nav-link:hover {
     color: rgb(255, 255, 255);
+    transform: translateY(3px);
 }
 
 .nav-link:hover:before {
@@ -62,20 +66,25 @@ nav {
     text-decoration: none;
     padding: 0.5em 1em;
     border-radius: 5px;
-    background-color: rgba(0, 102, 255, 0.301);
+    border: solid 1px;
+    background-color: rgba(29, 3, 36, 0.849);
+    border-color: var(--cor-destaque);
     color: var(--cor-texto);
-    transition: 0.9s;
+    transition: 0.5s;
+    box-shadow: 0px 12px 29px 0px rgba(87, 121, 161, 0.24);
     font-weight: bolder;
-    border: 1px solid rgba(0, 0, 0, 0.466);
 }
 
 .contate-me:hover {
-    background-color: var(--preto-padrao);
-    border-color: var(--cor-destaque);
+    background-color: rgba(81, 7, 102, 0.849);
+    transform: translateY(5px);
+    box-shadow: none;
+
 }
 
 .logo {
     transition: 0.5s;
+    width: 3em;
 }
 
 .logo:hover {
@@ -156,7 +165,9 @@ nav {
     width: 0;
     height: 0;
     margin: 30px 0 20px 20px;
-    background: rgba(0, 56, 139, 0.918);
+    background: 
+        linear-gradient(to bottom, rgb(63, 3, 63) , rgba(99, 12, 84, 0.801) 70%), 
+        url('../img/gif-back.gif');
     border-radius: 50%;
     transition: 0.3s ease;
 }
